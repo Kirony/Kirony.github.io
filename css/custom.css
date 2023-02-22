@@ -786,13 +786,13 @@ div#archive {
 }
 
 /* 白天模式遮罩透明 */
-#footer::before {
+/* #footer::before {
     background: transparent !important;
-}
+} */
 
-#page-header::before {
+/* #page-header::before {
     background: transparent !important;
-}
+} */
 
 /* 夜间模式遮罩透明 */
 [data-theme="dark"] #footer::before {
@@ -812,4 +812,29 @@ div#archive {
 
 [data-theme="dark"] #welcome-info {
     background: #212121;
+}
+
+
+#footer:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    content: '';
+}
+
+#footer {
+    /* position: relative; */
+    background-attachment: scroll;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#content-inner,
+#footer {
+    -webkit-animation: bottom-top 1s;
+    -moz-animation: bottom-top 1s;
+    -o-animation: bottom-top 1s;
+    -ms-animation: bottom-top 1s;
+    animation: bottom-top 1s;
 }
