@@ -838,3 +838,16 @@ div#archive {
     -ms-animation: bottom-top 1s;
     animation: bottom-top 1s;
 }
+
+@font-face {
+    /* 为载入的字体取名字(随意) */
+    font-family: 'YSHST';
+    /* 字体文件地址(相对或者绝对路径都可以) */
+    src: url(/diy_font/ZhuZiAWan2.woff2);
+    /* 定义加粗样式(加粗多少) */
+    font-weight: normal;
+    /* 定义字体样式(斜体/非斜体) */
+    font-style: normal;
+    /* 定义显示样式 */
+    font-display: block;
+}
